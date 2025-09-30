@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4177620a73b8d465a8baa1d5c60ae93d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4177620a73b8d465a8baa1d5c60ae93d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4177620a73b8d465a8baa1d5c60ae93d = L.map(
+                "map_4177620a73b8d465a8baa1d5c60ae93d",
+                {
+                    center: [38.9212, -77.0421],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ccdb146d7807f1bf17e6769e4f45bf48 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ccdb146d7807f1bf17e6769e4f45bf48.addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var marker_490b0aab98db2f0de59233782a3391b3 = L.marker(
+                [38.9250119, -77.0387495],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_596d866428cbb2d7c24282bf089d7925 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9020f70016750c19853c463b6584f589 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afdf3433c9dd13d3ce27213a2e20911c = $(`<div id="html_afdf3433c9dd13d3ce27213a2e20911c" style="width: 100.0%; height: 100.0%;"><strong>The Potter's House Cafe & Bookstore</strong><br>Coffee and books</div>`)[0];
+                popup_9020f70016750c19853c463b6584f589.setContent(html_afdf3433c9dd13d3ce27213a2e20911c);
+            
+        
+
+        marker_490b0aab98db2f0de59233782a3391b3.bindPopup(popup_9020f70016750c19853c463b6584f589)
+        ;
+
+        
+    
+    
+                marker_490b0aab98db2f0de59233782a3391b3.setIcon(icon_596d866428cbb2d7c24282bf089d7925);
+            
+    
+            var marker_a6567bcc0826c8550e181c938a583fab = L.marker(
+                [38.921771, -77.0426197],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_b0580a993bca6857d79c5a6f97949e6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_591a8ade7825ae96d70527a0fede823d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c2660f1e9eceb082f008bf2254c3e6c = $(`<div id="html_0c2660f1e9eceb082f008bf2254c3e6c" style="width: 100.0%; height: 100.0%;"><strong>Bukom Cafe</strong><br>Good West African live music.</div>`)[0];
+                popup_591a8ade7825ae96d70527a0fede823d.setContent(html_0c2660f1e9eceb082f008bf2254c3e6c);
+            
+        
+
+        marker_a6567bcc0826c8550e181c938a583fab.bindPopup(popup_591a8ade7825ae96d70527a0fede823d)
+        ;
+
+        
+    
+    
+                marker_a6567bcc0826c8550e181c938a583fab.setIcon(icon_b0580a993bca6857d79c5a6f97949e6e);
+            
+    
+            var marker_55d19c1dfe619172e1e1fa5b70b7303e = L.marker(
+                [38.9219571, -77.0421524],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_158428409f52613f416c7cab04af5983 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9d8f32a3b05ccb658b1353142ea5ed8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_392df7ecfa881b11d6d86e288ba5e29f = $(`<div id="html_392df7ecfa881b11d6d86e288ba5e29f" style="width: 100.0%; height: 100.0%;"><strong>Tryst</strong><br>Very crowded coffee shop with a chaotic atmosphere.</div>`)[0];
+                popup_f9d8f32a3b05ccb658b1353142ea5ed8.setContent(html_392df7ecfa881b11d6d86e288ba5e29f);
+            
+        
+
+        marker_55d19c1dfe619172e1e1fa5b70b7303e.bindPopup(popup_f9d8f32a3b05ccb658b1353142ea5ed8)
+        ;
+
+        
+    
+    
+                marker_55d19c1dfe619172e1e1fa5b70b7303e.setIcon(icon_158428409f52613f416c7cab04af5983);
+            
+    
+            var marker_8c35521deec8af227ebdd643090d8a21 = L.marker(
+                [38.92184, -77.0420977],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_9b9e66cde91989dd4ba922113791929f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2da4eca8cf6de82ab9def061d64a9921 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d377f806f1bf4cb30c6809c257392a6 = $(`<div id="html_4d377f806f1bf4cb30c6809c257392a6" style="width: 100.0%; height: 100.0%;"><strong>The Diner</strong><br>Cheap American diner food.</div>`)[0];
+                popup_2da4eca8cf6de82ab9def061d64a9921.setContent(html_4d377f806f1bf4cb30c6809c257392a6);
+            
+        
+
+        marker_8c35521deec8af227ebdd643090d8a21.bindPopup(popup_2da4eca8cf6de82ab9def061d64a9921)
+        ;
+
+        
+    
+    
+                marker_8c35521deec8af227ebdd643090d8a21.setIcon(icon_9b9e66cde91989dd4ba922113791929f);
+            
+    
+            var marker_6ebc4b5f265e81ee22474fdc784d41cb = L.marker(
+                [38.9218415, -77.0426414],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_02390088acb14c99edd6ae9b295b8195 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24e0e6e7d49dc71dc4e4651b0d87680f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc26abda1f6b7cbc8639e7be18378a74 = $(`<div id="html_bc26abda1f6b7cbc8639e7be18378a74" style="width: 100.0%; height: 100.0%;"><strong>Roofers Union</strong><br>Nice chill rooftop.</div>`)[0];
+                popup_24e0e6e7d49dc71dc4e4651b0d87680f.setContent(html_bc26abda1f6b7cbc8639e7be18378a74);
+            
+        
+
+        marker_6ebc4b5f265e81ee22474fdc784d41cb.bindPopup(popup_24e0e6e7d49dc71dc4e4651b0d87680f)
+        ;
+
+        
+    
+    
+                marker_6ebc4b5f265e81ee22474fdc784d41cb.setIcon(icon_02390088acb14c99edd6ae9b295b8195);
+            
+    
+            var marker_9bea90d983767f35255c26f31f70afa7 = L.marker(
+                [38.9202366, -77.0447474],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_7cd403c15bdaa1a78f88c3749f164126 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbc23d738a5899a2cc1e66a0da41f980 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2010ab52fc121f5bdfaccc9450f0045a = $(`<div id="html_2010ab52fc121f5bdfaccc9450f0045a" style="width: 100.0%; height: 100.0%;"><strong>Kalorama Park</strong><br>Great for summer picnics.</div>`)[0];
+                popup_bbc23d738a5899a2cc1e66a0da41f980.setContent(html_2010ab52fc121f5bdfaccc9450f0045a);
+            
+        
+
+        marker_9bea90d983767f35255c26f31f70afa7.bindPopup(popup_bbc23d738a5899a2cc1e66a0da41f980)
+        ;
+
+        
+    
+    
+                marker_9bea90d983767f35255c26f31f70afa7.setIcon(icon_7cd403c15bdaa1a78f88c3749f164126);
+            
+    
+            var marker_c02d844216579e607f271773ea6dfe63 = L.marker(
+                [38.9136193, -77.0454577],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_46013368e6ec2d0a6a777a039fb01330 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d767d3dc2eb6a66d31f733e12e9101e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58ee21f8e8006ea0121840d32e568d77 = $(`<div id="html_58ee21f8e8006ea0121840d32e568d77" style="width: 100.0%; height: 100.0%;"><strong>The Board Room</strong><br>Spent many evenings playing board games with friends.</div>`)[0];
+                popup_d767d3dc2eb6a66d31f733e12e9101e2.setContent(html_58ee21f8e8006ea0121840d32e568d77);
+            
+        
+
+        marker_c02d844216579e607f271773ea6dfe63.bindPopup(popup_d767d3dc2eb6a66d31f733e12e9101e2)
+        ;
+
+        
+    
+    
+                marker_c02d844216579e607f271773ea6dfe63.setIcon(icon_46013368e6ec2d0a6a777a039fb01330);
+            
+    
+            var marker_fc80fd27c16808d0b95371267b3fcc10 = L.marker(
+                [38.9131128, -77.0453311],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_41d872fe94c1cb55fdf920ebb2021ab1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1c59804c7ee04cc23233ba2543e1595 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f36d638bd65d4ea09f737534aa7158f = $(`<div id="html_4f36d638bd65d4ea09f737534aa7158f" style="width: 100.0%; height: 100.0%;"><strong>Tatiana Pizza</strong><br>A perfect place to get a large slice of pizza after a night of board games.</div>`)[0];
+                popup_a1c59804c7ee04cc23233ba2543e1595.setContent(html_4f36d638bd65d4ea09f737534aa7158f);
+            
+        
+
+        marker_fc80fd27c16808d0b95371267b3fcc10.bindPopup(popup_a1c59804c7ee04cc23233ba2543e1595)
+        ;
+
+        
+    
+    
+                marker_fc80fd27c16808d0b95371267b3fcc10.setIcon(icon_41d872fe94c1cb55fdf920ebb2021ab1);
+            
+    
+            var marker_bceccb69a7e4a4772008b47cf102b7ff = L.marker(
+                [38.931237, -77.0324872],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_e4c5c55caae616c88e9a2abca33d3399 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_966c8f0ab3e4204cf8c4a81df641423f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_604cc2fcd7f9d38b60aa19972d489443 = $(`<div id="html_604cc2fcd7f9d38b60aa19972d489443" style="width: 100.0%; height: 100.0%;"><strong>Iron Age - Columbia Heights</strong><br>Unlimited seafood.</div>`)[0];
+                popup_966c8f0ab3e4204cf8c4a81df641423f.setContent(html_604cc2fcd7f9d38b60aa19972d489443);
+            
+        
+
+        marker_bceccb69a7e4a4772008b47cf102b7ff.bindPopup(popup_966c8f0ab3e4204cf8c4a81df641423f)
+        ;
+
+        
+    
+    
+                marker_bceccb69a7e4a4772008b47cf102b7ff.setIcon(icon_e4c5c55caae616c88e9a2abca33d3399);
+            
+    
+            var marker_7de24258a160e8f1fce492d812208476 = L.marker(
+                [38.9212884, -77.0358193],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_bbdc01325005e954bd5c05fe2d099e19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbf86c4a8b164f38bb5506e76027f7be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb92c32ce5e22f374da1a63a6492c0b6 = $(`<div id="html_eb92c32ce5e22f374da1a63a6492c0b6" style="width: 100.0%; height: 100.0%;"><strong>Meridian Hill Park</strong><br>Beautiful park for an evening stroll.</div>`)[0];
+                popup_bbf86c4a8b164f38bb5506e76027f7be.setContent(html_eb92c32ce5e22f374da1a63a6492c0b6);
+            
+        
+
+        marker_7de24258a160e8f1fce492d812208476.bindPopup(popup_bbf86c4a8b164f38bb5506e76027f7be)
+        ;
+
+        
+    
+    
+                marker_7de24258a160e8f1fce492d812208476.setIcon(icon_bbdc01325005e954bd5c05fe2d099e19);
+            
+    
+            var marker_5ec283629fccfc42191dd66c84bdab43 = L.marker(
+                [38.9319598, -77.0285005],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_1bc8bcfdc9cc4f9070464f510f5076c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae6b29e60fe42d29721b9dbfadd4c95b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fe0b4de00b3ae25480f2f52a3d81f4a = $(`<div id="html_3fe0b4de00b3ae25480f2f52a3d81f4a" style="width: 100.0%; height: 100.0%;"><strong>Makan</strong><br>Great Malaysian food.</div>`)[0];
+                popup_ae6b29e60fe42d29721b9dbfadd4c95b.setContent(html_3fe0b4de00b3ae25480f2f52a3d81f4a);
+            
+        
+
+        marker_5ec283629fccfc42191dd66c84bdab43.bindPopup(popup_ae6b29e60fe42d29721b9dbfadd4c95b)
+        ;
+
+        
+    
+    
+                marker_5ec283629fccfc42191dd66c84bdab43.setIcon(icon_1bc8bcfdc9cc4f9070464f510f5076c7);
+            
+    
+            var marker_586945174d31a03bd084b904eaed2c2a = L.marker(
+                [38.9327327, -77.0282624],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_edc21cf96cfdd7a55ea2c3d631dc5605 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a42d77698eebdc5788df366d1203b341 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11e49e5e8350993811642129cf814b29 = $(`<div id="html_11e49e5e8350993811642129cf814b29" style="width: 100.0%; height: 100.0%;"><strong>The Coupe</strong><br>Great brunch place.</div>`)[0];
+                popup_a42d77698eebdc5788df366d1203b341.setContent(html_11e49e5e8350993811642129cf814b29);
+            
+        
+
+        marker_586945174d31a03bd084b904eaed2c2a.bindPopup(popup_a42d77698eebdc5788df366d1203b341)
+        ;
+
+        
+    
+    
+                marker_586945174d31a03bd084b904eaed2c2a.setIcon(icon_edc21cf96cfdd7a55ea2c3d631dc5605);
+            
+    
+            var marker_33bb9b6c17d3e0ff7184024f9999d715 = L.marker(
+                [38.9377279, -77.0330896],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_9101a048cd0717502d378da55930e622 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0dae96f84c6abc56377f0ba82d9cd72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edba628ca5569cb210b8928b8d37ed26 = $(`<div id="html_edba628ca5569cb210b8928b8d37ed26" style="width: 100.0%; height: 100.0%;"><strong>Red Derby</strong><br>Lovely rooftop.</div>`)[0];
+                popup_a0dae96f84c6abc56377f0ba82d9cd72.setContent(html_edba628ca5569cb210b8928b8d37ed26);
+            
+        
+
+        marker_33bb9b6c17d3e0ff7184024f9999d715.bindPopup(popup_a0dae96f84c6abc56377f0ba82d9cd72)
+        ;
+
+        
+    
+    
+                marker_33bb9b6c17d3e0ff7184024f9999d715.setIcon(icon_9101a048cd0717502d378da55930e622);
+            
+    
+            var marker_fdb6e7c5402e46e1e634614674c2a2fe = L.marker(
+                [38.9374187, -77.0330048],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_ea1c16eb810b7cc82aec0f3fd1b7d7d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_575ab6d80b0a35e3c8c2f0a36f8abc0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f22674c3e97a757d4536e643e6b29b2b = $(`<div id="html_f22674c3e97a757d4536e643e6b29b2b" style="width: 100.0%; height: 100.0%;"><strong>Anafre DC</strong><br>Good place for Mexican seafood.</div>`)[0];
+                popup_575ab6d80b0a35e3c8c2f0a36f8abc0b.setContent(html_f22674c3e97a757d4536e643e6b29b2b);
+            
+        
+
+        marker_fdb6e7c5402e46e1e634614674c2a2fe.bindPopup(popup_575ab6d80b0a35e3c8c2f0a36f8abc0b)
+        ;
+
+        
+    
+    
+                marker_fdb6e7c5402e46e1e634614674c2a2fe.setIcon(icon_ea1c16eb810b7cc82aec0f3fd1b7d7d3);
+            
+    
+            var marker_cb45c26220ebbe038723e8ed373356fe = L.marker(
+                [38.9058289, -77.0078463],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_38cf7830a1a4ddd802cbe6e0cd4efd11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6b107ca4229e0e447fe2eecdef00e4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41a38e1af2ef8fabfb8d3bf9634d0b6a = $(`<div id="html_41a38e1af2ef8fabfb8d3bf9634d0b6a" style="width: 100.0%; height: 100.0%;"><strong>King Street Oyster Bar</strong><br>Perfect for happy hour oysters.</div>`)[0];
+                popup_c6b107ca4229e0e447fe2eecdef00e4e.setContent(html_41a38e1af2ef8fabfb8d3bf9634d0b6a);
+            
+        
+
+        marker_cb45c26220ebbe038723e8ed373356fe.bindPopup(popup_c6b107ca4229e0e447fe2eecdef00e4e)
+        ;
+
+        
+    
+    
+                marker_cb45c26220ebbe038723e8ed373356fe.setIcon(icon_38cf7830a1a4ddd802cbe6e0cd4efd11);
+            
+    
+            var marker_629fae675a5a994816288c9649460c2d = L.marker(
+                [38.89717, -77.0097882],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_f7c02feb945e13662080e4420e42ab9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2cff4c437ca38ac348426535e212b10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_459da3be42be0d361349a95e7f1fab4e = $(`<div id="html_459da3be42be0d361349a95e7f1fab4e" style="width: 100.0%; height: 100.0%;"><strong>Kelly's Irish Times</strong><br>Go for a Guiness.</div>`)[0];
+                popup_a2cff4c437ca38ac348426535e212b10.setContent(html_459da3be42be0d361349a95e7f1fab4e);
+            
+        
+
+        marker_629fae675a5a994816288c9649460c2d.bindPopup(popup_a2cff4c437ca38ac348426535e212b10)
+        ;
+
+        
+    
+    
+                marker_629fae675a5a994816288c9649460c2d.setIcon(icon_f7c02feb945e13662080e4420e42ab9d);
+            
+    
+            var marker_4b6476c7f40c8fba1dde06cd6be152fc = L.marker(
+                [38.9618531, -77.0457383],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_673a29f9004aeddbbccf2d06a1159438 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc10cde928629c4433a3b9429e5788a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ebefc0c0ad7e98c1a544bb85bf04897 = $(`<div id="html_7ebefc0c0ad7e98c1a544bb85bf04897" style="width: 100.0%; height: 100.0%;"><strong>Rock Creek Park</strong><br>Countless weekends spent hiking here.</div>`)[0];
+                popup_dc10cde928629c4433a3b9429e5788a6.setContent(html_7ebefc0c0ad7e98c1a544bb85bf04897);
+            
+        
+
+        marker_4b6476c7f40c8fba1dde06cd6be152fc.bindPopup(popup_dc10cde928629c4433a3b9429e5788a6)
+        ;
+
+        
+    
+    
+                marker_4b6476c7f40c8fba1dde06cd6be152fc.setIcon(icon_673a29f9004aeddbbccf2d06a1159438);
+            
+    
+            var marker_15a80d11646bf910447601f090ddaa7a = L.marker(
+                [38.8786883, -77.0237593],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_3d90ffc38f9aa7321dc517e69971bdae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d851c6f1115e55f0e316e63d4996468c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78b05c18b15a105a25bd97e2d8369d81 = $(`<div id="html_78b05c18b15a105a25bd97e2d8369d81" style="width: 100.0%; height: 100.0%;"><strong>The Wharf</strong><br>Go for a walk feel like a tourist.</div>`)[0];
+                popup_d851c6f1115e55f0e316e63d4996468c.setContent(html_78b05c18b15a105a25bd97e2d8369d81);
+            
+        
+
+        marker_15a80d11646bf910447601f090ddaa7a.bindPopup(popup_d851c6f1115e55f0e316e63d4996468c)
+        ;
+
+        
+    
+    
+                marker_15a80d11646bf910447601f090ddaa7a.setIcon(icon_3d90ffc38f9aa7321dc517e69971bdae);
+            
+    
+            var marker_4511ce974ffdb8550a0421d84aec21f1 = L.marker(
+                [38.8718872, -77.0192959],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_b2c46f0a214f8735894fec1aa3a7dfff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5f7ed6ebd730f01497bc4f80c417653 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4999f621557b03f45031b03380808f3f = $(`<div id="html_4999f621557b03f45031b03380808f3f" style="width: 100.0%; height: 100.0%;"><strong>Titanic Memorial</strong><br>Part of the Wharf no one usually goes to. But I like it.</div>`)[0];
+                popup_f5f7ed6ebd730f01497bc4f80c417653.setContent(html_4999f621557b03f45031b03380808f3f);
+            
+        
+
+        marker_4511ce974ffdb8550a0421d84aec21f1.bindPopup(popup_f5f7ed6ebd730f01497bc4f80c417653)
+        ;
+
+        
+    
+    
+                marker_4511ce974ffdb8550a0421d84aec21f1.setIcon(icon_b2c46f0a214f8735894fec1aa3a7dfff);
+            
+    
+            var marker_df9fbf58fda12279fc8cdcbd422f45d7 = L.marker(
+                [38.8892122, -77.050172],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_f5d5e8a893dc550b05afb3582eea9d03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee08e0394008294d2befc6959a7842dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_069f396c8daa9a97e0356eefa505ee9f = $(`<div id="html_069f396c8daa9a97e0356eefa505ee9f" style="width: 100.0%; height: 100.0%;"><strong>Lincoln Memorial</strong><br>Go behind the memo</div>`)[0];
+                popup_ee08e0394008294d2befc6959a7842dc.setContent(html_069f396c8daa9a97e0356eefa505ee9f);
+            
+        
+
+        marker_df9fbf58fda12279fc8cdcbd422f45d7.bindPopup(popup_ee08e0394008294d2befc6959a7842dc)
+        ;
+
+        
+    
+    
+                marker_df9fbf58fda12279fc8cdcbd422f45d7.setIcon(icon_f5d5e8a893dc550b05afb3582eea9d03);
+            
+    
+            var marker_b2473524ecfd4eeec072e0adefde6977 = L.marker(
+                [38.8994859, -77.0201102],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_77029d6ce891b80b184053114f55de57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28866bc3374f6cee9eb18888cd4b3595 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d196e392ac070f25bf7a8be8d18e3cef = $(`<div id="html_d196e392ac070f25bf7a8be8d18e3cef" style="width: 100.0%; height: 100.0%;"><strong>Spice 6 Modern Indian</strong><br>The best South Indian food in DC.</div>`)[0];
+                popup_28866bc3374f6cee9eb18888cd4b3595.setContent(html_d196e392ac070f25bf7a8be8d18e3cef);
+            
+        
+
+        marker_b2473524ecfd4eeec072e0adefde6977.bindPopup(popup_28866bc3374f6cee9eb18888cd4b3595)
+        ;
+
+        
+    
+    
+                marker_b2473524ecfd4eeec072e0adefde6977.setIcon(icon_77029d6ce891b80b184053114f55de57);
+            
+    
+            var marker_70985e43fe53c3630c4d6df06c4feb0c = L.marker(
+                [38.8650348, -76.9897857],
+                {
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+        
+    
+            var icon_36a5700e9c3f33299483f6e63f369c74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1963e84276e6c6503ccaa65e9a02833 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04649f5bb668e2fcdfe1e3a5ee59f77f = $(`<div id="html_04649f5bb668e2fcdfe1e3a5ee59f77f" style="width: 100.0%; height: 100.0%;"><strong>King Street</strong><br>Beautiful old town. Great for a walk.</div>`)[0];
+                popup_e1963e84276e6c6503ccaa65e9a02833.setContent(html_04649f5bb668e2fcdfe1e3a5ee59f77f);
+            
+        
+
+        marker_70985e43fe53c3630c4d6df06c4feb0c.bindPopup(popup_e1963e84276e6c6503ccaa65e9a02833)
+        ;
+
+        
+    
+    
+                marker_70985e43fe53c3630c4d6df06c4feb0c.setIcon(icon_36a5700e9c3f33299483f6e63f369c74);
+            
+    
+            var layer_control_61dd6a6dbce2f1dda75a62906baed6e3_layers = {
+                base_layers : {
+                    "OpenStreetMap" : tile_layer_ccdb146d7807f1bf17e6769e4f45bf48,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_61dd6a6dbce2f1dda75a62906baed6e3 = L.control.layers(
+                layer_control_61dd6a6dbce2f1dda75a62906baed6e3_layers.base_layers,
+                layer_control_61dd6a6dbce2f1dda75a62906baed6e3_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_4177620a73b8d465a8baa1d5c60ae93d);
+
+        
+</script>
+</html>
