@@ -2,7 +2,8 @@
 
 This project is a simple interactive map highlighting a curated selection of places in Washington, DC that are either notable landmarks or personally meaningful locations. It is designed as a lightweight exploration tool to visualize geographic points of interest.
 
-Live site: (Visit here!)[https://rushikeshay.github.io/Folium-Map/]
+Live site: [Visit here!](https://rushikeshay.github.io/Folium-Map/)
+
 ## Technologies Used
 
 This project is built entirely using Python and leverages the following libraries:
